@@ -6,6 +6,7 @@ import TitleBar from './components/titlebar'
 import Intro from './components/intro';
 import LandingPage from './components/landingpage.index'
 import pictures from "../pictures.json/";
+import Footer from './components/footer'
 
 function App() {
   const [, setPictures] = useState(pictures)
@@ -20,7 +21,7 @@ function App() {
       id = {picture.id}
       image = {picture.image}/>
     ))}
-    
+    <Footer />
     
     </>
   )

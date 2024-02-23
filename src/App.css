@@ -23,6 +23,11 @@ div {
 .card > .img-container > img {
   width: 40%
 }
+.footer {
+  font-size: 25px;
+  color: black;
+  background-color: bisque;
+}
 .intro {
   min-height: 30%;
   min-width : 100%;
