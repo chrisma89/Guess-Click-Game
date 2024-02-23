@@ -7,6 +7,22 @@
 div {
   display: inline;
 }
+.pics {
+  display: flex;
+  flex-direction : row;
+  flex-wrap: wrap;
+}
+.card > .img-container {
+  height: 50%;
+  width: 100%;
+  align-items: center;
+  overflow: hidden;
+  text-align: center;
+  border-radius: "2px solid  #59B4C3"
+}
+.card > .img-container > img {
+  width: 40%
+}
 .intro {
   min-height: 30%;
   min-width : 100%;

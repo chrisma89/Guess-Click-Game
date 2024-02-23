@@ -8,14 +8,14 @@ import LandingPage from './components/landingpage.index'
 import pictures from "../pictures.json/";
 
 function App() {
-  const [displaypic, setPictures] = useState(pictures)
+  const [, setPictures] = useState(pictures)
 
   return (
     <>
     <TitleBar />
     <Intro />
     {pictures.map((picture)=> (
-      <LandingPage  
+      <LandingPage  className ="container-fluid d-flex"
       key = {picture.id}
       id = {picture.id}
       image = {picture.image}/>
