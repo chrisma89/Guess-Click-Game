@@ -28,7 +28,7 @@ div {
   color: black;
   background-color: bisque;
 }
-.intro {
+.intro, .footer {
   min-height: 30%;
   min-width : 100%;
   flex-direction: column;
