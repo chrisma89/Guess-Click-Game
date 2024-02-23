@@ -9,7 +9,15 @@ import pictures from "../pictures.json/";
 import Footer from './components/footer'
 
 function App() {
-  const [, setPictures] = useState(pictures)
+  const [picturedisplay, setPictures] = useState(pictures)
+
+  const shufflePictures = (id) => {
+    const newArray = picturedisplay.sort(() => Math.random() - 0.5); 
+    // return newArray;
+    setPictures(newArray)
+  }; 
+
+  
 
   return (
     <>
@@ -19,7 +27,8 @@ function App() {
       <LandingPage  className ="container-fluid d-flex"
       key = {picture.id}
       id = {picture.id}
-      image = {picture.image}/>
+      image = {picture.image}
+      shufflePictures = {shufflePictures}/>
     ))}
     <Footer />
     
