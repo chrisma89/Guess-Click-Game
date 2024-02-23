@@ -1,38 +1,50 @@
 [
   {
-    "image1" : "./public/images/candle01.jpg"
+    "id" : "1",
+    "image" : "./public/images/candle01.jpg"
   },
   {
-    "image2" : "./public/images/candle02.jpg"
+    "id" : "2",
+    "image" : "./public/images/candle02.jpg"
   },
   {
-    "image3" : "./public/images/candle03.jpg"
+    "id" : "3",
+    "image" : "./public/images/candle03.jpg"
   },
   {
-    "image4" : "./public/images/candle04.jpg"
+    "id" : "4",
+    "image" : "./public/images/candle04.jpg"
   },
   {
-    "image5" : "./public/images/candle05.jpg"
+    "id" : "5",
+    "image" : "./public/images/candle05.jpg"
   },
   {
-    "image6" : "./public/images/candle06.jpg"
+    "id" : "6",
+    "image" : "./public/images/candle06.jpg"
   },
   {
-    "image7" : "./public/images/candle07.jpg"
+    "id" : "7",
+    "image" : "./public/images/candle07.jpg"
   },
   {
-    "image8" : "./public/images/candle08.jpg"
+    "id" : "8",
+    "image" : "./public/images/candle08.jpg"
   },
   {
-    "image9" : "./public/images/candle09.jpg"
+    "id" : "9",
+    "image" : "./public/images/candle09.jpg"
   },
   {
-    "image10" : "./public/images/candle10.jpg"
+    "id" : "10",
+    "image" : "./public/images/candle10.jpg"
   },
   {
-    "image11" : "./public/images/candle11.jpg"
+    "id" : "11",
+    "image" : "./public/images/candle11.jpg"
   },
   {
-    "image12" : "./public/images/candle12.jpg"
+    "id" : "12",
+    "image" : "./public/images/candle12.jpg"
   }
 ]

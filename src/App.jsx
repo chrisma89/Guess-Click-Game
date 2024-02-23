@@ -3,15 +3,24 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import TitleBar from './components/titlebar'
-import Intro from './components/intro'
+import Intro from './components/intro';
+import LandingPage from './components/landingpage.index'
+import pictures from "../pictures.json/";
 
 function App() {
-  // const [count, setCount] = useState(0)
+  const [displaypic, setPictures] = useState(pictures)
 
   return (
     <>
     <TitleBar />
     <Intro />
+    {pictures.map((picture)=> (
+      <LandingPage  
+      key = {picture.id}
+      id = {picture.id}
+      image = {picture.image}/>
+    ))}
+    
     
     </>
   )
