@@ -11,7 +11,7 @@ const LandingPage = ({id, image, shufflePictures}) => {
    
     
     
-      <Card.Img variant="top" src={image} onClick={() => pictures.shufflePictures(id)} className="img-container" style={{ width: '17.5rem', height : '16rem', margin : "1rem"}}/>
+      <Card.Img variant="top" src={image} onClick={shufflePictures}className="img-container" style={{ width: '17.5rem', height : '16rem', margin : "1rem"}}/>
    
       
    
