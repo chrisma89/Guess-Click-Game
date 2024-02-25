@@ -14,6 +14,7 @@ function App() {
   const [message, setMessage] = useState("Click an image to begin!");
   
   const [score, setScore] = useState(0);
+  const [topscore, setTopscore] = useState(0)
 
   
   // function to shuffle array and set new array into state
@@ -34,6 +35,7 @@ function App() {
     console.log(checkArray);
     setMessage("You guessed correctly")
     setScore(score + 1)
+    setTopscore(topscore + 1)
    }
    else {
     setMessage("You guessed incorrectly")
@@ -53,7 +55,8 @@ function App() {
   return (
     <>
     <TitleBar message = {message}
-    score = {score}/>
+    score = {score}
+    topscore={topscore}/>
     <Intro />
     {picturedisplay.map((picture)=> (
       <LandingPage  className ="container-fluid d-flex"
