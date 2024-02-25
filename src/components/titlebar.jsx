@@ -11,8 +11,8 @@ const TitleBar = ({message, score, topscore}) => {
 
   
   return (
-    <Navbar expand="lg" className="d-flex justify-content-between" >
-      <Container  style = {{backgroundColor : "#23001E", padding : "10px", margin : "0", width : "100%"}}>
+    <Navbar expand="lg" className="d-flex justify-content-between navbar m-0 border-0 p-0" >
+      <div  style = {{backgroundColor : "#23001E", padding : "10px",margin: "0", width : "100%"}}>
        
           <Nav className="d-flex justify-content-between"> 
             <Nav.Link style = {{paddingRight : "70px", color : "white", fontSize : "30px"}} href="#home">Guess-Click-Game</Nav.Link>
@@ -20,7 +20,7 @@ const TitleBar = ({message, score, topscore}) => {
             <Nav.Link style = {{paddingRight : "70px", color : "white", fontSize : "30px"}}href="#link">Score : {score} | Top Score : {topscore}</Nav.Link>
           </Nav>
     
-      </Container>
+      </div>
     </Navbar>
   );
 }

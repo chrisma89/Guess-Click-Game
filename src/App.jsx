@@ -63,7 +63,7 @@ function App() {
     topscore={topscore}/>
     <Intro />
     {picturedisplay.map((picture)=> (
-      <LandingPage  className ="container-fluid d-flex"
+      <LandingPage  className ="container-fluid d-flex m-0 border-0 p-0"
       key = {picture.id}
       id = {picture.id}
       image = {picture.image}

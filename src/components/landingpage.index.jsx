@@ -16,7 +16,9 @@ const LandingPage = ({id, image, shufflePictures, updateScore}) => {
    }
   
    return (
+   
     <Card.Img variant="top" src={image} onClick={() => {{handleClick(id), updateScore(id)}}} className="img-container" style={{ width: '17.7rem', height : '16rem', margin : "1rem"}}/>
+    
       );
 }
 
