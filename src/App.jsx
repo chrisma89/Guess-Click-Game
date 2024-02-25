@@ -35,13 +35,15 @@ function App() {
     console.log(checkArray);
     setMessage("You guessed correctly")
     setScore(score + 1)
+    if(score >= topscore){
     setTopscore(topscore + 1)
+    }
    }
    else {
     setMessage("You guessed incorrectly")
     setScore(0);
-    setPictures(pictures)
-    checkArray=[]
+    setPictures(pictures);
+    checkArray=[];
    }
 
 }
