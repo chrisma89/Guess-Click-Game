@@ -16,7 +16,7 @@ function App() {
   const [score, setScore] = useState(0);
   const [topscore, setTopscore] = useState(0)
 
-  
+  const [messagecolor, setMessagecolor] = useState("white")
   // function to shuffle array and set new array into state
   const shufflePictures = () => {
     const newArray = [...picturedisplay]
@@ -32,15 +32,18 @@ function App() {
 
    if (!checkArray.includes(id)){
    checkArray.push(id);
-    console.log(checkArray);
-    setMessage("You guessed correctly")
+    console.log(checkArray); 
+    setMessagecolor("#C6878F")
+    setMessage("You guessed correctly!")
+   
     setScore(score + 1)
     if(score >= topscore){
     setTopscore(topscore + 1)
     }
    }
    else {
-    setMessage("You guessed incorrectly")
+    setMessagecolor("#C3B299")
+    setMessage("You guessed incorrectly!")
     setScore(0);
     setPictures(pictures);
     checkArray=[];
@@ -60,7 +63,8 @@ function App() {
     <>
     <TitleBar message = {message}
     score = {score}
-    topscore={topscore}/>
+    topscore={topscore}
+    messagecolor={messagecolor}/>
     <Intro />
     {picturedisplay.map((picture)=> (
       <LandingPage  className ="container-fluid d-flex m-0 border-0 p-0"

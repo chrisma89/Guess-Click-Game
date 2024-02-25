@@ -1,9 +1,4 @@
-/* #root {
-  /* max-width: 100%; */
-  /* margin: 0 auto; */
-  /* padding: 2rem; */
-  /* text-align: center; */
-/* } */ */
+
 * {
   margin: 0;
   padding: 0;
@@ -19,17 +14,7 @@ html, body {
   flex-direction : row;
   flex-wrap: wrap;
 }
-/* .card > .img-container {
-  height: 50%;
-  width: 100%;
-  align-items: center;
-  overflow: hidden;
-  text-align: center;
-  border-radius: "2px solid  #7F636E"
-}
-.card > .img-container > img {
-  width: 40%
-} */
+
 .footer {
   font-size: 25px;
   color:white;
@@ -54,12 +39,14 @@ html, body {
 .navbar {
   width: 100%;
 }
-/* .logo {
-  height: 6em;
-  padding: 1.5em;
+.color {
+  color: aquamarine;
+}
+.logo {
   will-change: filter;
   transition: filter 300ms;
-} */
+  color: aquamarine;
+}
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }

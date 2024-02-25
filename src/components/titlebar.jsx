@@ -7,7 +7,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import * as bootstrap from 'bootstrap'
 import App from "../App";
 
-const TitleBar = ({message, score, topscore}) => {
+const TitleBar = ({message, score, topscore, messagecolor}) => {
 
   
   return (
@@ -16,8 +16,8 @@ const TitleBar = ({message, score, topscore}) => {
        
           <Nav className="d-flex justify-content-between"> 
             <Nav.Link style = {{paddingRight : "70px", color : "white", fontSize : "30px"}} href="#home">Guess-Click-Game</Nav.Link>
-            <Nav.Link style = {{paddingRight : "70px", color : "white", fontSize : "30px"}} href="#home">{message}</Nav.Link>
-            <Nav.Link style = {{paddingRight : "70px", color : "white", fontSize : "30px"}}href="#link">Score : {score} | Top Score : {topscore}</Nav.Link>
+            <Nav.Link className="color" style = {{paddingRight : "20px", color : messagecolor, fontSize : "30px"}} href="#home">{message}</Nav.Link>
+            <Nav.Link style = {{paddingLeft : "70px", color : "white", fontSize : "30px"}}href="#link">Score : {score} | Top Score : {topscore}</Nav.Link>
           </Nav>
     
       </div>
