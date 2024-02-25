@@ -39,7 +39,8 @@ function App() {
    }
    else {
     setMessage("You guessed incorrectly")
-    setScore(0)
+    setScore(0);
+    setPictures(pictures)
    }
 
 }
