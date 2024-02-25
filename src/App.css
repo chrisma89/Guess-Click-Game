@@ -1,12 +1,10 @@
-#root {
-  max-width: 100%;
+/* #root {
+  /* max-width: 100%; */
   /* margin: 0 auto; */
   /* padding: 2rem; */
   /* text-align: center; */
-}
-div {
-  display: inline;
-}
+/* } */ */
+
 .pics {
   display: flex;
   flex-direction : row;
@@ -18,24 +16,29 @@ div {
   align-items: center;
   overflow: hidden;
   text-align: center;
-  border-radius: "2px solid  #59B4C3"
+  border-radius: "2px solid  #7F636E"
 }
 .card > .img-container > img {
   width: 40%
 }
 .footer {
   font-size: 25px;
-  color: black;
-  background-color: bisque;
+  color:white;
+  padding: 20px;
+  min-width : 100%;
+  flex-direction: column;
+  align-items: right;
+  background-color: #7F636E;
 }
-.intro, .footer {
+.intro {
+  color:white;
   min-height: 30%;
   min-width : 100%;
   flex-direction: column;
   align-items: center;
   padding: 100px;
   border : 2px solid black;
-  background-color: bisque;
+  background-color: #7F636E;
 
 }
 

@@ -12,7 +12,7 @@ const TitleBar = ({message, score, topscore}) => {
   
   return (
     <Navbar expand="lg" className="d-flex justify-content-between" >
-      <Container  style = {{backgroundColor : "#102820", padding : "10px"}}>
+      <Container  style = {{backgroundColor : "#23001E", padding : "10px", margin : "0", width : "100%"}}>
        
           <Nav className="d-flex justify-content-between"> 
             <Nav.Link style = {{paddingRight : "70px", color : "white", fontSize : "30px"}} href="#home">Guess-Click-Game</Nav.Link>
