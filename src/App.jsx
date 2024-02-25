@@ -10,7 +10,8 @@ import Footer from './components/footer'
  let checkArray = [];
 function App() {
   // usestate to shuffle that pictures array
-  const [picturedisplay, setPictures] = useState(pictures)
+  const [picturedisplay, setPictures] = useState(pictures);
+  const [message, setMessage] = useState("Click an image to begin!")
   
   // function to shuffle array and set new array into state
   const shufflePictures = () => {
@@ -21,7 +22,20 @@ function App() {
    
   }; 
 
+ const updateScore = (id) => {
+    
+   
 
+   if (!checkArray.includes(id)){
+   checkArray.push(id);
+    console.log(checkArray);
+    setMessage("You guessed correctly")
+   }
+   else {
+    setMessage("You guessed incorrectly")
+   }
+
+}
 
   // usestate to increment score and display success message
 
@@ -29,16 +43,13 @@ function App() {
 
   // function to check if the picture id has been clicked already
 
-  const updateScore = (id) => {
-   checkArray.push(id);
-   console.log(checkArray)
-  }
+ 
 
   
 
   return (
     <>
-    <TitleBar />
+    <TitleBar message = {message}/>
     <Intro />
     {picturedisplay.map((picture)=> (
       <LandingPage  className ="container-fluid d-flex"
