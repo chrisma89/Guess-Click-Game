@@ -41,6 +41,7 @@ function App() {
     setMessage("You guessed incorrectly")
     setScore(0);
     setPictures(pictures)
+    checkArray=[]
    }
 
 }
