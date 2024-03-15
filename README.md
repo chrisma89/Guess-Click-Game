@@ -15,7 +15,8 @@ In conclusion, the Guess-Click-Game stands as a testament to thoughtful design a
 
 This repository has been built using 
 
-=React
+-React
+-Node.js
 -React Bootstrap
 -HTML
 -CSS 
