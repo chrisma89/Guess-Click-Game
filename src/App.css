@@ -21,13 +21,32 @@
   align-items: right;
   background-color: #7F636E;
 }
+
+@media (max-width: 768px) {
+  .footer {
+    flex-wrap: wrap-reverse;
+    flex-direction: column;
+  }
+}
+.title {
+  flex-direction: row;
+}
+@media (max-width: 768px) {
+  .title {
+    flex-wrap: wrap-reverse;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
 .intro {
   color:white;
   min-height: 30%;
   min-width : 100%;
   flex-direction: column;
   align-items: center;
-  padding: 75px;
+  padding-top: 75px;
+  padding-bottom: 75px;
   background-color: #7F636E;
   margin : 0;
   border : 0;

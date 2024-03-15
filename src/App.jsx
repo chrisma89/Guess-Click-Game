@@ -64,7 +64,7 @@ function App() {
         messagecolor={messagecolor}
       />
       <Intro />
-      {picturedisplay.map((picture) => (
+      <div className="container-fluid d-flex flex-wrap justify-content-center">  {picturedisplay.map((picture) => (
         <LandingPage
           className="container-fluid d-flex m-0 border-0 p-0"
           key={picture.id}
@@ -73,7 +73,8 @@ function App() {
           shufflePictures={shufflePictures}
           updateScore={updateScore}
         />
-      ))}
+      ))}</div>
+    
       <Footer />
     </>
   );

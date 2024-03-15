@@ -8,7 +8,8 @@ import App from "../App";
 
 const TitleBar = ({ message, score, topscore, messagecolor }) => {
   return (
-    <Navbar
+    <div className="container-fluid dflex flex-row title" style={{
+      backgroundColor: "#23001E"}}><Navbar
       expand="lg"
       className="d-flex justify-content-between navbar m-0 border-0 p-0"
     >
@@ -39,14 +40,15 @@ const TitleBar = ({ message, score, topscore, messagecolor }) => {
             {message}
           </Nav.Link>
           <Nav.Link
-            style={{ paddingLeft: "70px", color: "white", fontSize: "30px" }}
+            style={{ paddingLeft: "auto", color: "white", fontSize: "30px" }}
             href="#link"
           >
             Score : {score} | Top Score : {topscore}
           </Nav.Link>
         </Nav>
       </div>
-    </Navbar>
+    </Navbar></div>
+    
   );
 };
 

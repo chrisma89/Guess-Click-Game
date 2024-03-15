@@ -13,6 +13,7 @@ const LandingPage = ({ id, image, shufflePictures, updateScore }) => {
   };
 
   return (
+   
     <Card.Img
       variant="top"
       src={image}
